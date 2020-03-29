@@ -1,0 +1,22 @@
+{
+  "name": "misocial",
+  "description": "",
+  "authors": [
+    "dzinoviev <danzino21@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DaniilZinoviev/misocial-site",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "psd/"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "components-font-awesome": "^5.12.1"
+  }
+}
