@@ -1,6 +1,8 @@
 // Home (index.html)
 .homepage {
 	header {
-		background-color: $c-black;
+		background: url("../img/home-header-bg.png") no-repeat top center;
+		background-size: cover;
+		height: 800px;
 	}
 }

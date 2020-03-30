@@ -1,0 +1,62 @@
+// Set defaults
+h1 {
+	font-weight: bold;
+}
+h2 {
+	font-weight: 500;
+	font-size: 60px;
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+// Reset styles
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: $f-primary, sans-serif;
+}
+
+// Custom classes
+.logo {
+	display: flex;
+	align-items: center;
+	img {
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		margin-right: 15px;
+	}
+	h1 {
+		display: inline-block;
+		font-size: 26px;
+    letter-spacing: 6px;
+		margin-bottom: 0;
+	}
+}
+.top-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	padding: 50px 50px;
+	.nav-item {
+		margin: 0 10px;
+		&.active {
+			border-bottom: 2px solid $c-white;
+		}
+		.nav-link {
+			color: $c-white;
+			padding: 5px 14px;
+			&:hover {
+				color: darken($c-white, 10%);
+			}
+			&:active {
+				color: darken($c-white, 15%);
+			}
+		}
+	}
+}
