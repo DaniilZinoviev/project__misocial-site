@@ -46,11 +46,26 @@
 }
 
 @media screen and (max-width: 992px) {
-
+	.homepage {
+		.section-fourth {
+			padding: 90px 0 70px;
+			.img-wrap {
+				transform: none!important;
+			}
+		}
+	}
+	
 }
 
 @media screen and (max-width: 768px) {
-
+	.homepage {
+		.section-fourth {
+			.block-1 {
+		    left: -66%;
+		    bottom: -78%;
+		  }
+		}
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -62,6 +77,34 @@
 	}
 	.top-menu {
 		padding: 20px 15px 50px;
+	}
+	.homepage {
+		.section-fourth {
+			.block-1 {
+		    left: -66%;
+		    bottom: -87%;
+        transform: rotateZ(15deg);
+		  }
+		  .block-2 {
+  	    right: -30%;
+ 			  bottom: -35%;
+ 			  width: 100%;
+		  }
+		  .block-3 {
+  	    right: -26%;
+   		  bottom: -35%;
+ 			  width: 100%;
+		  }
+		  .block-4 {
+		  	display: none;
+		  }
+		  .block-5 {
+		  	left: auto;
+		  	bottom: auto;
+		  	top: 50px;
+    		right: 10%;
+		  }
+		}
 	}
 }
 
