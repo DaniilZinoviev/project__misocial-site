@@ -1,0 +1,84 @@
+@media screen and (max-width: 1200px) {
+	h2 {
+		font-size: 3.5em;
+		line-height: 1.2;
+	}
+	.nav {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		border-radius: 3px;
+		// max-height: 0;
+		text-align: right;
+		// overflow: hidden;
+		transition: all 0.25s ease-out;
+		z-index: 999;
+		opacity: 0;
+		transform: translateY(20px);
+		.nav-item {
+			margin: 3px 10px !important;
+			padding: 0;
+			width: 100%;
+			border-bottom: 2px solid rgba($c-white,0.4);
+		  box-shadow: 0 1px 2px 0 #000;
+		  width: 100%;
+		  background: $c-white;
+		  border-radius: 15px;
+		  margin-bottom: 5px;
+			&.active {
+				border-bottom: 2px solid rgba($c-black,0.4) !important;
+			}
+			.nav-link {
+				color: $c-black;
+			}
+		}
+		&.show {
+			opacity: 1;
+			transform: translateY(0);
+			.nav-item {
+				.nav-link {
+					color: $c-black !important;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+	h2 {
+		font-size: 2.75em;
+	}
+	.top-menu {
+		padding: 20px 15px 50px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.logo {
+		img {
+	    width: 40px;
+	    height: 40px;
+	    margin-right: 10px;
+		}
+		h1 {
+			font-size: 20px;
+		}
+	}
+	.menu-btn {
+		.line {
+			width: 22px;
+		}
+	}
+}

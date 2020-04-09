@@ -1,8 +1,104 @@
 // Home (index.html)
 .homepage {
 	header {
-		background: url("../img/home-header-bg.png") no-repeat top center;
-		background-size: cover;
-		height: 800px;
+		padding-bottom: 50px;
+		.header-content {
+			background: url("../img/map.png") no-repeat top center;
+			background-size: cover;
+		}
+	}
+	section {
+		padding: 120px 0 60px;
+	}
+	.section-first {
+		background-color: $c-bg-section1;
+		padding-top: 150px;
+		img {
+			box-shadow: 0 0 30px 67px #f1f4f6;
+		}
+	}
+	.section-second {
+		.tasks {
+			padding: 40px 0;
+			.item {
+				margin-bottom: 25px;
+				.img {
+					flex: 0 0 64px;
+					height: 64px;
+					position: relative;
+					text-align: center;
+					line-height: 64px;
+					background-color: $c-white;
+					color: $c-gray-1;
+					font-size: 1.5em;
+				}
+				.text {
+					p {
+						opacity: 0.9;
+					}
+				}
+			}
+		}
+	}
+	.section-fourth {
+		background-color: $c-gray-2;
+		padding: 135px 0 90px;
+		overflow: hidden;
+
+		>.container {
+			position: relative;
+			z-index: 999;
+		}
+		.block-1 {
+	    background: linear-gradient(to top,#7a87d9,#7569dd);
+	    left: -24%;
+	    bottom: -61%;
+	    width: 100%;
+	    height: 100%;
+	    transform: rotateZ(31deg);
+	    z-index: 5;
+		}
+		.block-2 {
+	    background: linear-gradient(to right,#e2ecf4,#e2e9f4);
+	    right: -20%;
+	    bottom: -25%;
+	    width: 50%;
+	    height: 50%;
+	    transform: rotateZ(-25deg);
+	    z-index: 4;
+		}
+		.block-3 {
+	    background: linear-gradient(to right,#e2ecf4,#e2e9f4);
+	    right: -19%;
+   		bottom: -24%;
+	    width: 50%;
+	    height: 50%;
+	    transform: rotateZ(-25deg);
+	    z-index: 3;
+	    opacity: 0.4;
+		}
+		.block-4 {
+			right: 20px;
+			bottom: 100px;
+	    transform: rotateZ(-90deg);
+			z-index: 6;
+			letter-spacing: 2px;
+			height: 24px;
+			line-height: 24px;
+			font-size: 0.7em;
+			img {
+				filter: grayscale(100%);
+			}
+		}
+		.block-5 {
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 3px;
+	    background-color: #ffc946;
+	    transform: rotateZ(45deg);
+	    bottom: 50px;
+	    left: 20%;
+	    z-index: 10;
+		}
 	}
 }

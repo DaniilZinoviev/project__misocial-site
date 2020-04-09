@@ -90,7 +90,6 @@ gulp.task('fonts:build', async function() {
 		.pipe(gulp.dest(path.build.fonts));
 });
 
-
 gulp.task('browser-sync', function() {
 	browserSync(config);
 });
