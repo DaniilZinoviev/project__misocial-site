@@ -41,7 +41,7 @@
 		}
 	}
 	.section-fourth {
-		border-top: 1px solid #e3e6ee;
+		border-top: 1px solid $c-gray-3;
 		background-color: $c-gray-2;
 		padding: 135px 0 40px;
 		overflow: hidden;
@@ -106,6 +106,51 @@
 		}
 		.slide-down {
 			transform: translateY(-100%);
+		}
+	}
+	.section-sixth {
+		overflow: hidden;
+		padding: 110px 0 115px;
+		background-color: $c-gray-2;
+		border-top: 1px solid $c-gray-3;
+		.slider {
+			.slick-list {
+				overflow: visible;
+			}
+			.slick-dots {
+				padding-top: 60px;
+			}
+		}
+		.slide {
+			padding: 28px 30px;
+			border-radius: 10px;
+			hr {
+				max-width: 70px;
+			}
+			.user {
+				line-height: 1;
+				font-size: 26px;
+				text-align: center;
+				padding-top: 7px;
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+	.section-seventh {
+		overflow: hidden;
+		position: relative;
+		padding: 90px 0 150px;
+		.content {
+			padding-top: 100px;
+			padding-bottom: 30vw;
+			background: url("../img/map.png") no-repeat top center;
+			background-size: cover;
+		}
+		.img {
+			bottom: 0;
+			right: -20px;
+			width: 70vw;
 		}
 	}
 }
