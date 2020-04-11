@@ -108,6 +108,12 @@
 			transform: translateY(-100%);
 		}
 	}
+	.section-fifth {
+		.slide-down {
+			bottom: -24px;
+			left: 50%;
+		}
+	}
 	.section-sixth {
 		overflow: hidden;
 		padding: 110px 0 115px;
@@ -152,5 +158,23 @@
 			right: -20px;
 			width: 70vw;
 		}
+	}
+}
+footer {
+	color: $c-footer-text;
+	.social {
+		a {
+			color: $c-footer-text;
+			margin: 0 5px;
+		}
+	}
+	.bottom-menu {
+		padding-bottom: 30px;
+	}
+	hr {
+		margin: 0 50px;
+	}
+	.bottom-text {
+  	padding: 25px 50px;
 	}
 }

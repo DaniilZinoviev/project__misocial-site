@@ -138,7 +138,7 @@ html body {
 		margin-bottom: 0;
 	}
 }
-.top-menu {
+.menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -146,18 +146,53 @@ html body {
 	.nav {
 		.nav-item {
 			margin: 0 10px;
-			&.active {
-				border-bottom: 2px solid $c-white;
-			}
 			.nav-link:not(.btn) {
-				color: $c-white;
 				padding: 5px 14px;
-				&:hover {
-					color: darken($c-white, 10%);
-				}
-				&:active {
-					color: darken($c-white, 15%);
-				}
+			}
+		}
+	}
+	&.top-menu {
+		.nav-item.active {
+			border-bottom: 2px solid $c-white;
+		}
+		.nav-link:not(.btn) {
+			color: $c-white;
+			&:hover {
+				color: darken($c-white, 10%);
+			}
+			&:active {
+				color: darken($c-white, 15%);
+			}
+		}
+	}
+	&.bottom-menu {
+		.menu-btn {
+			.line {
+				background-color: $c-footer-text;
+			}
+		}
+		.nav {
+			top: auto;
+			bottom: 100%;
+		}
+		.nav-link:not(.btn) {
+			color: $c-footer-text;
+			&:hover {
+				color: $c-accent;
+			}
+			&:active {
+				color: darken($c-accent, 15%);
+			}
+		}
+		.btn {
+			background-color: $c-accent;
+			border-color: $c-accent;
+			color: $c-white;
+			&:hover {
+				background-color: darken($c-accent, 10%);
+			}
+			&:active {
+				background-color: darken($c-accent, 15%);
 			}
 		}
 	}
@@ -174,6 +209,7 @@ html body {
 	}
 	&.close {
 		transform: rotate(180deg);
+		opacity: 1;
 		.line {
 			&:nth-child(1) {
 				transform: rotate(45deg) translate(5px, 5px);
